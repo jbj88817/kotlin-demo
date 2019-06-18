@@ -1,6 +1,6 @@
 package us.bojie.ch2
 
-import sun.jvm.hotspot.HelloWorld
+import us.bojie.ch2.helloworld.HelloWorld2
 
 const val FINAL_HELLO_WORLD: String = "Hello World"
 var helloWorld: String = FINAL_HELLO_WORLD
@@ -16,11 +16,11 @@ fun main() {
     println("hello world from nullable type: " + nullableHelloWorld)
     println("hello world from Array: " + helloWorldArray.joinToString(""))
     println("hello world from CharArray: " + String(helloWorldCharArray))
-    println("class name hello world: " + HelloWorld::class.java.simpleName)
-    println("class name hello world: " + HelloWorld::class.java.name)
+    println("class name hello world: " + HelloWorld2::class.java.simpleName)
+    println("class name hello world: " + HelloWorld2::class.java.name)
     println(
         "part of the class name of HelloWorld: "
-                + HelloWorld::class.java.simpleName.slice(0 until helloWorldLength)
+                + HelloWorld2::class.java.simpleName.slice(0 until helloWorldLength)
     ) // [0, 11)
     println("the length of hello world is : " + helloWorldLength)
     println("the length of hello world is (long): " + helloWorldLengthLong)
