@@ -8,13 +8,13 @@ fun main() {
     println(complex2)
 }
 
-data class Complex<T: Number>(val a: T, val b: T){
+data class Complex<T : Number>(val a: T, val b: T) {
 
     override fun toString(): String {
         return "($a + $b i)"
     }
 }
 
-fun <T: Comparable<T>> maxOf(a: T, b: T): T{
-    return if( a < b) b else a
+fun <T : Comparable<T>> maxOf(a: T, b: T): T {
+    return if (a < b) b else a
 }
